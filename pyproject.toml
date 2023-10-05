@@ -44,7 +44,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-write_to = "src/lsst_science_utils/_version.py"
+write_to = "src/lsst/science/utils/_version.py"
 
 [tool.pytest.ini_options]
 testpaths = [
@@ -63,4 +63,4 @@ line_length = 110
 lsst_science_utils = ["py.typed"]
 
 [tool.coverage.run]
-omit=["src/lsst_science_utils/_version.py"]
+omit=["src/lsst/science/utils/_version.py"]
