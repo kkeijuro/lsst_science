@@ -31,6 +31,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run unit tests with pytest
       run: |
-        python -m pytest tests --cov=lsst_science_utils --cov-report=xml
+        python -m pytest tests --cov=./src --cov-report=xml
     - name: Upload coverage report to codecov
       uses: codecov/codecov-action@v3
